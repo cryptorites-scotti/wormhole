@@ -742,7 +742,8 @@ export default function Recovery() {
                 <TextField
                   variant="outlined"
                   label="Emitter Chain"
-                  disabled
+                  //ToDo: remove comment from disabled
+                  //disabled
                   value={recoveryParsedVAA?.emitter_chain || ""}
                   fullWidth
                   margin="normal"
@@ -750,7 +751,8 @@ export default function Recovery() {
                 <TextField
                   variant="outlined"
                   label="Emitter Address"
-                  disabled
+                  //ToDo: remove comment from disabled
+                  //disabled
                   value={
                     (recoveryParsedVAA &&
                       hexToNativeString(
@@ -765,7 +767,8 @@ export default function Recovery() {
                 <TextField
                   variant="outlined"
                   label="Sequence"
-                  disabled
+                  //ToDo: remove comment from disabled
+                  //disabled
                   value={recoveryParsedVAA?.sequence || ""}
                   fullWidth
                   margin="normal"
@@ -773,7 +776,8 @@ export default function Recovery() {
                 <TextField
                   variant="outlined"
                   label="Timestamp"
-                  disabled
+                  //ToDo: remove comment from disabled
+                  //disabled
                   value={
                     (recoveryParsedVAA &&
                       new Date(
@@ -787,7 +791,8 @@ export default function Recovery() {
                 <TextField
                   variant="outlined"
                   label="Guardian Set"
-                  disabled
+                  //ToDo: remove comment from disabled
+                  //disabled
                   value={recoveryParsedVAA?.guardian_set_index || ""}
                   fullWidth
                   margin="normal"
@@ -798,7 +803,8 @@ export default function Recovery() {
                 <TextField
                   variant="outlined"
                   label="Origin Chain"
-                  disabled
+                  //ToDo: remove comment from disabled
+                  //disabled
                   value={parsedPayload?.originChain.toString() || ""}
                   fullWidth
                   margin="normal"
@@ -806,7 +812,8 @@ export default function Recovery() {
                 <TextField
                   variant="outlined"
                   label="Origin Token Address"
-                  disabled
+                  //ToDo: remove comment from disabled
+                  //disabled
                   value={
                     parsedPayload
                       ? parsedPayload.targetChain === CHAIN_ID_TERRA2
@@ -824,7 +831,8 @@ export default function Recovery() {
                   <TextField
                     variant="outlined"
                     label="Origin Token ID"
-                    disabled
+                    //ToDo: remove comment from disabled
+                    //disabled
                     // @ts-ignore
                     value={parsedPayload?.tokenId || ""}
                     fullWidth
@@ -834,7 +842,8 @@ export default function Recovery() {
                 <TextField
                   variant="outlined"
                   label="Target Chain"
-                  disabled
+                  //ToDo: remove comment from disabled
+                  //disabled
                   value={parsedPayload?.targetChain.toString() || ""}
                   fullWidth
                   margin="normal"
@@ -842,7 +851,8 @@ export default function Recovery() {
                 <TextField
                   variant="outlined"
                   label="Target Address"
-                  disabled
+                  //ToDo: remove comment from disabled
+                  //disabled
                   value={
                     (parsedPayload &&
                       hexToNativeString(
@@ -859,7 +869,8 @@ export default function Recovery() {
                     <TextField
                       variant="outlined"
                       label="Amount"
-                      disabled
+                      //ToDo: remove comment from disabled
+                      //disabled
                       value={
                         parsedPayload && "amount" in parsedPayload
                           ? parsedPayload.amount.toString()
@@ -871,7 +882,8 @@ export default function Recovery() {
                     <TextField
                       variant="outlined"
                       label="Relayer Fee"
-                      disabled
+                      //ToDo: remove comment from disabled
+                      //disabled
                       value={
                         parsedPayload && "fee" in parsedPayload
                           ? parsedPayload.fee.toString()
