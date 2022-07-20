@@ -233,6 +233,15 @@ function App() {
               >
                 Wormhole
               </Link>
+              <Link
+                href="https://explorer.solana.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                color="inherit"
+                className={classes.link}
+              >
+                explorer
+              </Link>
             </div>
           </Hidden>
           <Hidden implementation="css" smUp>
