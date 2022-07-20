@@ -234,7 +234,7 @@ function App() {
                 Wormhole
               </Link>
               <Link
-                href="https://explorer.solana.com/?cluster={CLUSTER}"
+                href={`https://explorer.solana.com/?cluster=${CLUSTER}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 color="inherit"
