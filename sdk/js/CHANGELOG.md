@@ -1,17 +1,30 @@
 # Changelog
 
-## 0.5.2
+## 0.6.0
+
+### Added
+
+Wormhole chain devnet support
+
+human-readable part parameter to `humanAddress` function
 
 ### Changed
 
-Added chain ids for Arbitrum, Optimism, and Gnosis
+`canonicalAddress` and `humanAddress` functions moved from terra to cosmos module
+
+## 0.5.2
+
+### Added
+
+Support for PythNet
+Chain ids for Arbitrum, Optimism, and Gnosis
 
 ## 0.5.1
 
-### Changed
+### Added
 
-Added chain ids for Injective, Osmosis, Sui, and Aptos
-	
+Chain ids for Injective, Osmosis, Sui, and Aptos
+
 ## 0.5.0
 
 ### Changed

@@ -25,7 +25,9 @@ export const CHAINS = {
   arbitrum: 23,
   optimism: 24,
   gnosis: 25,
+  pythnet: 26,
   ropsten: 10001,
+  wormholechain: 3104,
 } as const;
 
 export type ChainName = keyof typeof CHAINS;
@@ -198,7 +200,17 @@ const MAINNET = {
     token_bridge: undefined,
     nft_bridge: undefined,
   },
+  pythnet: {
+    core: undefined,
+    token_bridge: undefined,
+    nft_bridge: undefined,
+  },
   ropsten: {
+    core: undefined,
+    token_bridge: undefined,
+    nft_bridge: undefined,
+  },
+  wormholechain: {
     core: undefined,
     token_bridge: undefined,
     nft_bridge: undefined,
@@ -337,10 +349,20 @@ const TESTNET = {
     token_bridge: undefined,
     nft_bridge: undefined,
   },
+  pythnet: {
+    core: undefined,
+    token_bridge: undefined,
+    nft_bridge: undefined,
+  },
   ropsten: {
     core: "0x210c5F5e2AF958B4defFe715Dc621b7a3BA888c5",
     token_bridge: "0xF174F9A837536C449321df1Ca093Bb96948D5386",
     nft_bridge: "0x2b048Da40f69c8dc386a56705915f8E966fe1eba",
+  },
+  wormholechain: {
+    core: undefined,
+    token_bridge: undefined,
+    nft_bridge: undefined,
   },
 };
 
@@ -476,9 +498,19 @@ const DEVNET = {
     token_bridge: undefined,
     nft_bridge: undefined,
   },
+  pythnet: {
+    core: undefined,
+    token_bridge: undefined,
+    nft_bridge: undefined,
+  },
   ropsten: {
     core: undefined,
     token_bridge: undefined,
+    nft_bridge: undefined,
+  },
+  wormholechain: {
+    core: "wormhole1ap5vgur5zlgys8whugfegnn43emka567dtq0jl",
+    token_bridge: "wormhole1zugu6cajc4z7ue29g9wnes9a5ep9cs7yu7rn3z",
     nft_bridge: undefined,
   },
 };
@@ -547,7 +579,9 @@ export const CHAIN_ID_APTOS = CHAINS["aptos"];
 export const CHAIN_ID_ARBITRUM = CHAINS["arbitrum"];
 export const CHAIN_ID_OPTIMISM = CHAINS["optimism"];
 export const CHAIN_ID_GNOSIS = CHAINS["gnosis"];
+export const CHAIN_ID_PYTHNET = CHAINS["pythnet"];
 export const CHAIN_ID_ETHEREUM_ROPSTEN = CHAINS["ropsten"];
+export const CHAIN_ID_WORMHOLE_CHAIN = CHAINS["wormholechain"];
 
 // This inverts the [[CHAINS]] object so that we can look up a chain by id
 export type ChainIdToName = {
